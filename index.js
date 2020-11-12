@@ -22,6 +22,6 @@ express()
 
     console.log("Redirecting with state ", state);
 
-    res.redirect(`https://devrel.auth0.com/continue?state=${state}&person=${person}`);
+    res.redirect(`https://devrel.us.auth0.com/continue?state=${state}&person=${person}`);
   })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
