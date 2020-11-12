@@ -11,9 +11,10 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .get('/parent-prompt', (req, res) => {
+    // gets state from the Auth0 action
     const state = req.query.state;
 
-    res.render('pages/color', { state });
+    res.render('pages/person', { state });
   })
   .post('/parent-prompt', (req, res) => {
     console.log(req.body)
